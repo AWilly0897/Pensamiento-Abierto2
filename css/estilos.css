@@ -45,6 +45,7 @@ header p {
   color: #003366;
 }
 
+/* Navegación */
 nav ul {
   list-style: none;
   margin-top: 1rem;
@@ -89,34 +90,7 @@ section {
   border-radius: 6px;
 }
 
-/* Acordeón */
-.acordeon-btn {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background-color: #003366;
-  color: #fff;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-}
-
-.acordeon-btn:hover,
-.acordeon-btn:focus {
-  background-color: #0055aa;
-  outline: none;
-}
-
-.acordeon-panel {
-  padding: 1rem;
-  background-color: #f4f4f4;
-  border-left: 4px solid #003366;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
+/* Footer */
 footer[role="contentinfo"] {
   margin-top: 60px;
   font-size: 0.9em;
@@ -125,6 +99,7 @@ footer[role="contentinfo"] {
   border-top: 1px solid #ccc;
   padding-top: 10px;
 }
+
 footer .relaciones {
   font-size: 0.9rem;
   color: #555;
@@ -147,6 +122,8 @@ footer .relaciones {
     font-size: 1.2rem;
   }
 }
+
+/* Bloque de artículos */
 .contenedor-articulos {
   margin-top: 2rem;
   padding: 1rem;
@@ -166,3 +143,69 @@ footer .relaciones {
   color: #555;
   margin-top: 1rem;
 }
+
+/* Formulario de comentarios */
+.formulario-testimonial {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #003366;
+  border-radius: 6px;
+}
+
+.formulario-testimonial label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+.formulario-testimonial input,
+.formulario-testimonial textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-testimonial button {
+  margin-top: 1rem;
+  background-color: #003366;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formulario-testimonial button:hover {
+  background-color: #0055aa;
+}
+
+/* Comentarios publicados */
+.comentarios-publicados {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eef2f5;
+  border-left: 4px solid #003366;
+  border-radius: 6px;
+}
+
+.comentarios-publicados h2 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.comentarios-publicados ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comentarios-publicados li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+

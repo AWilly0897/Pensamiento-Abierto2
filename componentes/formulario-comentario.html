@@ -1,8 +1,12 @@
+<!-- componentes/formulario-comentario.html -->
 <section class="formulario-testimonial" aria-labelledby="titulo-formulario">
   <h2 id="titulo-formulario">Tu pensamiento sobre este artículo</h2>
-  <p class="intro-formulario">Este espacio está abierto para quienes deseen compartir una reflexión, una crítica o una memoria. Cada comentario será tratado 
-    como parte de lo que se transmite, no como dato.</p>
+  <p class="intro-formulario">
+    Este espacio está abierto para quienes deseen compartir una reflexión, una crítica o una memoria. 
+    Cada comentario será tratado como parte de lo que se transmite, no como dato.
+  </p>
 
+  <!-- Formulario -->
   <form id="formulario-comentario">
     <label for="nombre">Nombre (opcional):</label>
     <input type="text" id="nombre" name="nombre" />
@@ -11,6 +15,15 @@
     <textarea id="comentario" name="comentario" required></textarea>
 
     <button type="submit">Enviar comentario</button>
-    <p class="intro-formulario">Este formulario no rastrea, no simula. Cada envío será validado manualmente, y la palabra será tratada como tal.</p>  
+
+    <p class="intro-formulario">
+      Este formulario no rastrea ni simula. Cada envío será validado manualmente, y la palabra será tratada como tal.
+    </p>
   </form>
+
+  <!-- Lista de comentarios publicados -->
+  <h3>Comentarios publicados</h3>
+  <ul id="lista-publicados"></ul>
 </section>
+
+

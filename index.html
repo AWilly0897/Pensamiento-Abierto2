@@ -12,25 +12,46 @@
 <body>
   <header role="banner" aria-label="Encabezado principal del blog">
     <h1>Pensamiento Abierto</h1>
-    <p class="subtitulo">Hehos tomados de distintos pensamientos pero con el mismo fin, · Segunda edición · 2026</p>
+    <p class="subtitulo">Hechos tomados de distintos pensamientos pero con el mismo fin · Segunda edición · 2026</p>
 
     <section role="region" aria-labelledby="bienvenida">
       <h2 id="bienvenida">Bienvenida</h2>
-      <p>Este nueva edicion del blog, tiene una estructura diferente en cuanto a la relacion de echos que puden ser de
-        distinta indole, pero que por algun motivo se desrrollan
-        como uno .
-        Mantego una realidad en cuanto a lo que veo, creo y describo eso no es decir que tenga la verdad en cuanto a la
-        descripcion de una escritura libre</p>
+      <p>Esta nueva edición del blog tiene una estructura diferente en cuanto a la relación de hechos que pueden ser de
+        distinta índole, pero que por algún motivo se desarrollan como uno. Mantengo una realidad en cuanto a lo que veo,
+        creo y describo; eso no significa que tenga la verdad absoluta en cuanto a la descripción de una escritura libre.</p>
     </section>
   </header>
+
+  <!-- Bloque de artículos -->
   <section role="region" aria-labelledby="titulo-articulos" class="contenedor-articulos">
-    <h2 id="titulo-articulos">Artículo</h2>
+    <h2 id="titulo-articulos">Artículos</h2>
     <ul id="lista-articulos" role="list" aria-label="Artículos disponibles"></ul>
     <p id="mensaje-proximo" class="proximo-articulo"></p>
   </section>
 
+  <!-- Bloque de comentarios -->
+  <section class="formulario-testimonial" aria-labelledby="titulo-formulario">
+    <h2 id="titulo-formulario">Tu pensamiento sobre este artículo</h2>
+    <p class="intro-formulario">Este espacio está abierto para quienes deseen compartir una reflexión, una crítica o una memoria. 
+      Cada comentario será tratado como parte de lo que se transmite, no como dato.</p>
+
+    <form id="formulario-comentario">
+      <label for="nombre">Nombre (opcional):</label>
+      <input type="text" id="nombre" name="nombre" />
+
+      <label for="comentario">Comentario:</label>
+      <textarea id="comentario" name="comentario" required></textarea>
+
+      <button type="submit">Enviar comentario</button>
+      <p class="intro-formulario">Este formulario no rastrea ni simula. Cada envío será validado manualmente, y la palabra será tratada como tal.</p>
+    </form>
+
+    <h3>Comentarios publicados</h3>
+    <ul id="lista-publicados"></ul>
+  </section>
+
   <footer role="contentinfo" aria-label="Información legal y de edición">
-    <p>Segunda edición de pensamiento abierto · © 2026 Ernesto I. Lora. Todos los derechos reservados.</p>
+    <p>Segunda edición de Pensamiento Abierto · © 2026 Ernesto I. Lora. Todos los derechos reservados.</p>
     <div class="relaciones" aria-label="Información técnica del sitio">
       <p>Publicado en <strong>GitHub</strong> https://github.com/AWilly0897/Pensamiento-Abierto2</p>
       <p>Desplegado con <strong>Vercel</strong> https://Pensamiento-Abierto2.vercel.app</p>
@@ -38,7 +59,10 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
+  <script src="js/comentarios.js"></script>
 </body>
 
 </html>
+
