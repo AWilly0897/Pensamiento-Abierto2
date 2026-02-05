@@ -35,8 +35,10 @@ async function mostrarComentariosPublicados() {
   const lista = document.getElementById("lista-publicados");
   if (!lista) return;
 
-  const owner = "TU_USUARIO"; // tu usuario de GitHub
-  const repo = "TU_REPO";     // tu repositorio donde guardás los comentarios
+  const owner = "AWilly0897"; // tu usuario de GitHub
+  const repo = "Pensamiento-Abierto2"; // tu repositorio donde guardás los comentarios
+
+
 
   try {
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues`);
