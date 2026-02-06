@@ -11,6 +11,9 @@ export default async function handler(req, res) {
   }
 
   try {
+    // 🔹 Log temporal para verificar si el token existe
+    console.log("Token recibido:", process.env.GITHUB_TOKEN ? "OK" : "NO DEFINIDO");
+
     const response = await fetch(
       "https://api.github.com/repos/AWilly0897/Pensamiento-Abierto2/issues",
       {
