@@ -1,4 +1,4 @@
-// Ejecutar al cargar la página
+// js/comentario.js
 document.addEventListener("DOMContentLoaded", () => {
   mostrarComentariosPublicados();
 
@@ -37,8 +37,6 @@ async function mostrarComentariosPublicados() {
 
   const owner = "AWilly0897"; // tu usuario de GitHub
   const repo = "Pensamiento-Abierto2"; // tu repositorio donde guardás los comentarios
-
-
 
   try {
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues`);

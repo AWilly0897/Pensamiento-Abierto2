@@ -22,3 +22,22 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
 }
+
+/* Mejora opcional para diferenciar autor y comentario */
+.comentarios-publicados li strong {
+  color: #005f73;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.comentarios-publicados li span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.comentarios-publicados li p {
+  margin: 0.5rem 0 0 0;
+  color: #333;
+  line-height: 1.5;
+}
+

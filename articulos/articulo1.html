@@ -57,13 +57,7 @@
         Que los códigos no son solo leyes, sino pactos morales. Que la cultura es la raíz de los pueblos.</p>
     </section>
 
-    <section aria-labelledby="supabase">
-      <h2 id="supabase">Ejemplo de dependencia tecnológica</h2>
-      <p>Supabase no pertenece a Google. Es una empresa independiente fundada en 2020 en Singapur por Paul Copplestone y Ant Wilson, respaldada por fondos de capital de riesgo. 
-        Lo que sí ocurre es que Supabase permite integrar login con Google como proveedor de autenticación, y para eso se usan las APIs de Google. Al aceptar permisos 
-        de acceso con tu cuenta de Google, esos datos quedan disponibles dentro del ecosistema de Google y pueden ser utilizados por las aplicaciones vinculadas a esa cuenta, 
-        según los términos y condiciones que aceptaste.</p>
-    </section>
+    
 
     <section aria-labelledby="dependencia">
       <h2 id="dependencia">Dependencia y falsa libertad</h2>
@@ -104,7 +98,7 @@
         <a href="../index.html" aria-label="Ir al inicio">⟵ Volver al inicio</a>
       </li>
       <li>
-        <a href="articulo2.html" aria-label="Ir al artículo siguiente: Accesibilidad digital">Artículo siguiente ⟶</a>
+        <a href="articulo2.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
       </li>
     </ul>
   </nav>
@@ -116,13 +110,13 @@
   <script src="/js/comentarios.js"></script>
   <script>
     // Cargar el formulario y el footer como componentes
-    fetch("../componentes/formulario-comentario.html")
+    fetch("/componentes/formulario-comentario.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-formulario").innerHTML = html;
       });
 
-    fetch("../componentes/footer.html")
+    fetch("/componentes/footer.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-footer").innerHTML = html;

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artículo 2 · Pensamiento Abierto2</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="/Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header role="banner" aria-label="Encabezado principal del artículo">
+    <h1>Pongo en conocimiento = Manifiesto</h1>
+    <p class="articulo" aria-label="Número de artículo">Artículo 2</p>
+  </header>
+
+  <main>
+
+
+      <article>
+        <h2> · Recopilación de la charla sobre responsabilidad, música y lógica humana</h2>
+
+        <p><strong>Algo me había quedado pendiente</strong>, seguramente leer lo importante. Me acordé y sé lo que voy a
+          hacer, nada más que todavía no es el tiempo de lo que me urgía. Creo que está en un arco… en fin, ¿en qué
+          estábamos?</p>
+
+        <h3>El despertar y la música</h3>
+        <p>La música suave puede facilitar un despertar progresivo, reduciendo el estrés inicial.</p>
+        <p>El cambio hacia una música más fuerte y rítmica activa el sistema nervioso y obliga a reaccionar.</p>
+        <p>La variación de estímulos puede generar confort o alteración, dependiendo de la personalidad.</p>
+        <p>La repetición de la misma música refuerza hábitos, mientras que la variación abre espacio a nuevas
+          adaptaciones.</p>
+
+        <h3>Tesituras humanas</h3>
+        <p>El que conoce y no cambia la tesitura: necesita siempre lo mismo, se resiste a la variación.</p>
+        <p>El que conoce y cambia la tesitura: acepta la variabilidad y se adapta.</p>
+        <p>El que no conoce y no cambia la tesitura: no tiene expectativa, cualquier estímulo puede funcionar.</p>
+
+        <h3>Responsabilidad vs. reloj</h3>
+        <p>No es el cronómetro lo que hace que una persona cumpla, sino la responsabilidad.</p>
+        <p>El reloj mide tiempo, pero la responsabilidad mide acción.</p>
+        <p>Una persona comprometida puede llegar antes de tiempo sin reloj, mientras que otra con reloj puede llegar
+          tarde.</p>
+
+        <h3>Reflexiones sobre la vida</h3>
+        <p>La verdadera fuerza no está en la hora ni en la edad, sino en la voluntad.</p>
+        <p>Ejemplos inspiradores: un niño de 5 años componiendo música, Beethoven sordo creando sinfonías eternas, un
+          hombre de 90 años escalando montañas.</p>
+        <p>La vida se mide en experiencias: lo grato, lo justo o injusto, lo que eleva o lastima.</p>
+        <p>El amor es la fuerza mayor: no guardarse nada, porque el amor no es mezquino.</p>
+
+        <h3>Síntesis</h3>
+        <p>Esta charla muestra que el despertar, la música, la disciplina y la responsabilidad son reflejos de la lógica
+          humana.
+          El confort puede ser un enemigo si lleva a la inacción, pero también puede ser un aliado si permite resultados
+          óptimos.
+          La clave está en aprender a no desistir, en amoldarse para un futuro mejor, y en reconocer que lo que
+          realmente impulsa al ser humano es la responsabilidad y el amor.</p>
+      </article>
+      
+
+     <!-- Incluir formulario -->
+  <div id="bloque-formulario"></div>
+
+  <!-- Comentarios publicados -->
+  <section id="comentarios-publicados" class="comentarios-publicados">
+    <h2>Comentarios publicados</h2>
+    <ul id="lista-publicados"></ul>
+  </section>
+
+  <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+    <ul>
+      <li>
+        <a href="../index.html" aria-label="Ir al inicio">⟵ Volver al inicio</a>
+      </li>
+      <li>
+        <a href="articulo2.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Footer -->
+  <div id="bloque-footer"></div>
+
+  <!-- Scripts -->
+  <script src="/js/comentarios.js"></script>
+  <script>
+    // Cargar el formulario y el footer como componentes
+    fetch("/componentes/formulario-comentario.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-formulario").innerHTML = html;
+      });
+
+    fetch("/componentes/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-footer").innerHTML = html;
+      });
+  </script>
+</body>
+   
