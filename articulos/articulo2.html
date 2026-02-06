@@ -61,9 +61,9 @@
           La clave está en aprender a no desistir, en amoldarse para un futuro mejor, y en reconocer que lo que
           realmente impulsa al ser humano es la responsabilidad y el amor.</p>
       </article>
-      
+  </main>
 
-     <!-- Incluir formulario -->
+  <!-- Incluir formulario -->
   <div id="bloque-formulario"></div>
 
   <!-- Comentarios publicados -->
@@ -75,10 +75,10 @@
   <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
     <ul>
       <li>
-        <a href="../index.html" aria-label="Ir al inicio">⟵ Volver al inicio</a>
+        <a href="articulo1.html" aria-label="Ir al inicio">⟵ Volver al inicio</a>
       </li>
       <li>
-        <a href="articulo2.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+        <a href="articulo3.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
       </li>
     </ul>
   </nav>
@@ -90,17 +90,19 @@
   <script src="/js/comentarios.js"></script>
   <script>
     // Cargar el formulario y el footer como componentes
-    fetch("/componentes/formulario-comentario.html")
+    fetch("../componentes/formulario-comentario.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-formulario").innerHTML = html;
       });
 
-    fetch("/componentes/footer.html")
+    fetch("../componentes/footer.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-footer").innerHTML = html;
       });
   </script>
 </body>
-   
+
+</html>
+

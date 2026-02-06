@@ -110,13 +110,13 @@
   <script src="/js/comentarios.js"></script>
   <script>
     // Cargar el formulario y el footer como componentes
-    fetch("/componentes/formulario-comentario.html")
+    fetch("../componentes/formulario-comentario.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-formulario").innerHTML = html;
       });
 
-    fetch("/componentes/footer.html")
+    fetch("../componentes/footer.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-footer").innerHTML = html;
