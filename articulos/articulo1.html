@@ -110,23 +110,22 @@
   <div id="bloque-footer"></div>
 
   <!-- Scripts -->
-  <script src="/js/comentarios.js"></script>
-  <script src="/script.js"></script> <!-- este es el que está en la raíz -->
-  <script>
-    // Cargar el formulario y el footer como componentes
-    fetch("../componentes/formulario-comentario.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("bloque-formulario").innerHTML = html;
-      });
+<script src="../js/comentarios.js"></script>
+<script src="../script.js"></script>
+<script>
+  // Cargar el formulario y el footer como componentes
+  fetch("../componentes/formulario-comentario.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-formulario").innerHTML = html;
+    });
 
-    fetch("../componentes/footer.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("bloque-footer").innerHTML = html;
-      });
-  </script>
-</body>
+  fetch("../componentes/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-footer").innerHTML = html;
+    });
+</script>
 
-</html>
+
 
