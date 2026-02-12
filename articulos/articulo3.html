@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pensamiento Abierto:Art 3</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/comentarios-publicados.css">
+    <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header role="banner" aria-label="Encabezado principal del artículo">
+        <h1>Escritos-Premio Nobel de la Paz</h1>
+        <p class="articulo" aria-label="Número de artículo">Artículo 3</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Sufridos pero Votamos</h2>
+            <p>
+                La frase que Gabriel García Márquez recoge en <em>Entre cachacos II</em> no es
+                un simple comentario político: es un diagnóstico cultural. “Se sufre pero se vota”
+                sintetiza la paradoja de la democracia en sociedades cargadas de impuestos,
+                incertidumbre y promesas incumplidas.
+            </p>
+
+            <h3>El público como juez</h3>
+            <p>
+                En la página 491, García Márquez relata la fugaz carrera de la película
+                <em>El caballero de Maison-Rouge</em> en Bogotá. Apenas tres días en cartel,
+                derrotada por un público que no aceptó “gato por liebre”. El escritor subraya
+                que no hubo tiempo para la crítica: fue la gente la que dictó sentencia.
+            </p>
+
+            <h3>Un panfleto contra la Revolución</h3>
+            <p>
+                El texto continúa describiendo la obra como un antiguo panfleto contra la
+                Revolución Francesa, dividido por el director en dos mitades monolíticas e
+                irreconocibles. La solemnidad de la primera parte y la confusión de la segunda
+                terminaron por hundir la película. El público bogotano, según García Márquez,
+                demostró criterio y rechazó lo impostado.
+            </p>
+
+            <h3>El paralelo argentino</h3>
+            <p>
+                Hoy, en 2026, los argentinos también estamos con los impuestos hasta el cuello.
+                Como aquel público bogotano, sabemos reconocer cuando nos quieren vender
+                gato por liebre. Votamos, sí, pero sufrimos en el proceso. La frase de García
+                Márquez se convierte en el ayer fue Bogotá, hoy es Buenos Aires.
+            </p>
+
+            <h3>La lógica del sufrimiento</h3>
+            <p>
+                ¿Cuál es la lógica donde en un mes el pueblo vota y el mapa se viste de rosa
+                para no hacer referencias a los partidos politicos que todos conocemos,
+                porque un mes despues vuelve a votar y el mapa es de color gris, los colores
+                son una mera referencia, a los votantes le cambian la medicacion.Esa es la
+                politica Argentina?
+                La democracia se sostiene en la elección, aunque esa elección se haga entre cargas y
+                decepciones. Se sufre, pero se vota.Pero de que manera votamos.
+            </p>
+            <P>
+                Aunque hay que poner en duda qué es lo que realmente ocurre con el voto del pueblo:
+                si expresa de manera auténtica su voluntad, o si termina siendo manipulado en la
+                forma en que se captan los votos.
+            </P>
+        </article>
+        <blockquote aria-label="Cita destacada">
+            <p>“Se dice que el pueblo elegi.” Sera asi?</p>
+            <cite class="firma">— Ernesto I. Lora</cite>
+        </blockquote>
+
+    </main>
+    <!-- Incluir formulario -->
+    <div id="bloque-formulario"></div>
+
+    <!-- Comentarios publicados -->
+    <section id="comentarios-publicados" class="comentarios-publicados">
+        <h2>Comentarios publicados</h2>
+        <ul id="lista-publicados"></ul>
+    </section>
+
+    <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+        <ul>
+            <li>
+                <a href="articulo2.html" aria-label="Ir al inicio">⟵ Artículo anterior</a>
+            </li>
+            <li>
+                <a href="articulo4.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <div id="bloque-footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/comentarios.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        // Cargar el formulario y el footer como componentes
+        fetch("../componentes/formulario-comentario.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("bloque-formulario").innerHTML = html;
+            });
+
+        fetch("../componentes/footer.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("bloque-footer").innerHTML = html;
+            });
+    </script>
+</body>
+
+</html>
