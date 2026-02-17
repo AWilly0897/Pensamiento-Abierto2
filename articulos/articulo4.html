@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pensamiento Abierto:Art 4</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/comentarios-publicados.css">
+    <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header role="banner" aria-label="Encabezado principal del artículo">
+        <h1>Carpeta Milagro</h1>
+        <p class="articulo" aria-label="Número de artículo">Artículo 4</p>
+    </header>
+
+    <main>
+        <a href="Milagro/index.html">Ver carpeta Milagro</a>
+    </main>
+
+
+    <!-- Incluir formulario -->
+    <div id="bloque-formulario"></div>
+
+    <!-- Comentarios publicados -->
+    <section id="comentarios-publicados" class="comentarios-publicados">
+        <h2>Comentarios publicados</h2>
+        <ul id="lista-publicados"></ul>
+    </section>
+
+    <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+        <ul>
+            <li>
+                <a href="articulo3.html" aria-label="Ir al inicio">⟵ Artículo anterior</a>
+            </li>
+            <li>
+                <a href="articulo5.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <div id="bloque-footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/comentarios.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        // Cargar el formulario y el footer como componentes
+        fetch("../componentes/formulario-comentario.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("bloque-formulario").innerHTML = html;
+            });
+
+        fetch("../componentes/footer.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("bloque-footer").innerHTML = html;
+            });
+    </script>
+</body>
+
+</html>

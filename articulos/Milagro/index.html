@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notas - Pensamiento Abierto</title>
+  <meta name="description" content="Recopilacion.">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --fg: #e6e6e6;
+      --muted: #b7b7b7;
+      --accent: #d4a017;
+      --link: #7fb3ff;
+      --card: #171a21;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #22262f;
+    }
+
+    header h1 {
+      margin: 0 0 .5rem;
+      font-size: 2rem;
+      letter-spacing: .5px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid #22262f;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .hero figcaption {
+      margin-top: .75rem;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    h2 {
+      margin: 2rem 0 1rem;
+      font-size: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #22262f;
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      border-top: 1px solid #22262f;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .tag {
+      display: inline-block;
+      background: #22262f;
+      color: var(--muted);
+      padding: .25rem .5rem;
+      border-radius: 6px;
+      font-size: .85rem;
+      margin-right: .5rem;
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Notas de Pensamiento Abierto</h1>
+    <h2>Actividad espontanea</h2>
+    <p>Observaciones, logo de la pestaña,.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Imagen principal: León alado -->
+    <section class="hero">
+      <figure>
+        <!-- Reemplazá el src por la ruta real de tu imagen en la carpeta -->
+        <img src="imagenes/LeonDeOro.png" alt="León alado en su tamaño original" />
+        <figcaption>León alado — imagen en tamaño original, adaptada como fondo de pantalla.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Presentación editorial breve -->
+    <section class="card">
+      <h2>Presentación</h2>
+      <p>
+        El programa llamado Pensamientos-Abierto
+        Esta alojado en https://pensamiento-abierto.vercel.app, difiere de este contexto que es un borrador.
+        Es la magia hecha realidad, donde se ha alcanzado lo que antes no se veía y hoy se difunde.
+      </p>
+      <p class="muted">
+        Los comentarios se hallarán para ese fin , ya que lo que estoy haciendo es una inspección del mercado: si tiene
+        interacciones y actividad, se le dará un dominio pago;
+        Para que sus comentarios queden registrados, de no ser así, el sistema dará de baja las implementaciones de
+        intercambios de cualquier índole.
+        Se debe identificar un lenguaje apropiado, sin desmerecer a nadie y sin que las cosas se tornen personales. Los
+        contenidos deben ser para el desarrollo
+        y el bien común de todos los argentinos, para que no nos quedemos hablando del mal que hicieron, sino de lo que
+        podemos prevenir para la salud de nuestros
+        hijos y un porvenir digno del país maravilloso que tenemos.
+        Esto debe ser una unión mancomunada para el bienestar de todos, sin perjudicar a nadie. Debemos comprender que
+        la luz está por encima de la oscuridad,
+        y que lo que fue oscuro hoy empieza a ser claro.
+      </p>
+
+    </section>
+
+    <!-- Manifiesto: valores y propósito -->
+    <section class="card">
+      <h2>Manifiesto</h2>
+      <p>
+        Sin una mentalidad de que todo es dinero. Porque lo que somos es más valioso que el mayor tesoro del mundo,
+        y ese tesoro ya lo tenemos: nuestros hijos, nuestros nietos, nuestros hermanos y, por qué no, esa viejita que
+        tanto amamos.
+        Con el Padre que ya no vemos pero nos acompaña en cada momento y que nos sigue cuidando, que nos alimenta, que
+        nos da de su bondad y de su sabiduría.
+      </p>
+
+      <p>
+        ¿Cuánto vale un techo que nos resguarde de la intemperie, aunque el techo sin igual sea el cielo?
+        Muchas veces los seres humanos miran hacia abajo: el primer síntoma es el cansancio que satura al ser.
+        Como un pacto con la desolación aparece el vivir sin propósito, avasallado por todo lo que significa pagar
+        impuestos que superan en la mayoría de los casos el salario mínimo vital y móvil.
+      </p>
+
+      <p>
+        Se hablaba de que la economía viajaba al 1500%. La verdad, no se entiende cómo puede “viajar” la economía, ya
+        que debería ser una utilidad que se remunera por un servicio prestado.
+        Ejemplo concreto: a fines de 2023 se pagaba de agua $379; un año más tarde, el pago ascendía a $15.000.
+        Sin embargo, se acusa que la inflación es de un solo dígito. La contradicción es evidente.
+      </p>
+
+      <p>
+        Tras asumir el nuevo gobierno, se produjeron situaciones irrisorias: barrios que antes se reconocían por su
+        nombre y ubicación fueron transformados.
+        En esos mismos barrios, antes de casas bajas donde se podía jugar en la calle, se levantaron monoblocks para la
+        gente carenciada.
+        Hoy las calles están atestadas de tráfico circulante y la renovación del barrio se dio por edificios que
+        cambiaron la fisonomía.
+      </p>
+
+      <p>
+        El centro bancario estaba saturado. Se decidió ubicar en la Avenida del Libertador, por lo menos en una vereda,
+        dos bancos; enfrente, otro banco; a tres cuadras, otro; a una cuadra más, otro; y a dos cuadras, otro más.
+        Con la nueva era de manejar todo por teléfono, los bancos hacen relucir su inmobiliario, pero la utilidad real
+        para la gente es discutible.
+      </p>
+
+      <p>
+        Nos perdemos de mirar hacia arriba, donde están los tesoros que nos brinda la naturaleza.
+        Ese árbol que desafía la vista, cuya altura no se alcanza a ver, permanece en pie desde hace milenios para que
+        lo disfrutes.
+        O ese arco iris que aparece después de la lluvia y recuerda la historia del duende y la olla con monedas de oro
+        imaginarias, valoradas por su brillo.
+      </p>
+
+      <p>
+        Se deformó la división: donde antes había una casa con dos baños, ahora hay edificios con cincuenta inodoros,
+        cumpliendo la “ley del gallinero”.
+        Esos edificios necesitan más agua, y también la pagan.
+        Un edificio de cinco departamentos con un tanque y cinco inodoros puede arreglarse; pero la multiplicación
+        desordenada genera un desastre urbano.
+      </p>
+
+      <p>
+        Conquistar un planeta, dicen las grandes mentes, y se olvidan de cultivar el amor de aquellos que no lo poseen.
+        Todo lo que obviamos en este mundo, y cuánta ayuda necesitan esos niños de África que, sin poder moverse por la
+        falta de agua, te llenan de alegría porque tienen el poder de danzar.
+      </p>
+
+      <p>
+        ¿Cuántos miles de billones de dólares habría que tener para forzar una sonrisa de un niño carenciado,
+        cuando ellos, sin querer, te brindan la sonrisa más linda del mundo?
+        Qué sabrán los que no pueden cerrar un negocio y han perdido dinero, si a unas pocas cuadras están los
+        hospitales con niños que necesitan lo que creemos haber perdido.
+        Y no es el dinero: es la salud.
+      </p>
+
+      <p>
+        Tres conquistas, un solo pueblo.
+        Un juego popular puede levantar a todo un pueblo. Puede convertir el dolor en gloria, la espera en abrazo, y la
+        incertidumbre en certeza.
+        Argentina lo vivió tres veces, y cada una fue más que una copa: fue una afirmación de lo que somos.
+      </p>
+
+
+
+
+
+
+      <p class="accent">
+        Debemos comprender que la luz está por encima de la oscuridad, y que lo que fue oscuro hoy empieza a ser claro.
+      </p>
+    </section>
+
+    <!-- Abrazo del 78: memoria y símbolo -->
+    <section class="card">
+      <h2>1978 — El abrazo que nos representa</h2>
+      <div class="grid">
+        <div>
+          <p>
+            No falta la oportunidad de saber perder. Porque el que más pierde es el que menos tiene,
+            pero a veces es el que más da.
+            Ese fue el abrazo del Mundial 78: un hincha sin brazos fundido en un abrazo con <strong>Alberto Tarantini y
+              Ubaldo Matildo Fillol</strong>. A pesar de no tener brazos,
+            fue quien abrazó a toda la Argentina. La tapa de El<em> Gráfico</em>fue símbolo de una nación que necesitaba
+            compasion, y fue el gesto que nos enseñó que la gloria,
+            es uno de esos símbolos que trascienden el resultado deportivo.
+            Es la imagen de la empatía, la alegría compartida y la dignidad que se multiplica cuando nos reconocemos en
+            el otro.
+
+          </p>
+          <p class="muted">
+            Ese abrazo nos recuerda que el valor de una victoria no está solo en la copa, sino en la humanidad que la
+            rodea.
+            Lo que te brindan los demás—
+          </p>
+        </div>
+        <figure>
+          <!-- Reemplazá el src por la ruta real de tu imagen en la carpeta -->
+          <img src="imagenes/descarga.jpg" alt="Abrazo del Mundial 78 en la tapa de El Gráfico" /><br>
+          <figcaption class="muted"> Víctor Dell’Aquila logra lo que todos anhelaban </figcaption>
+          <img src="imagenes/A 43 años de la obte.png" alt="Abrazo del Mundial 78 en la tapa de El Gráfico" />
+          <img src="imagenes/La historia del Abra.png" alt="Abrazo del Mundial 78 en la tapa de El Gráfico" />
+          <figcaption class="muted">Abrazo del 78 — Los que palpitaron esta final tienen vivida la imagen emotiva.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="card">
+      <h2>1986 — La obra de arte que nos liberó</h2>
+      <div class="grid">
+        <div>
+          <p>
+            La verdadera obra de arte, donde también nos convertimos en campeones mundiales, fue la tarde del domingo 22
+            de junio de 1986 en el Estadio Azteca de Ciudad de México.
+            Allí, Diego Armando Maradona convirtió dos goles legendarios: “La mano de Dios” y “El gol del siglo”. Ese
+            partido contra Inglaterra fue más que fútbol:
+            fue la forma de sacarnos el cuchillo atravesado en la garganta. Fue revancha simbólica, fue arte en
+            movimiento, fue justicia ansiada. Y el 29 de junio,
+            Argentina se consagró campeón del mundo al vencer a Alemania Federal 3-2, también en el Estadio Azteca.
+            Maradona, Burruchaga, Valdano, Brown… todos fueron
+            parte de una sinfonía que nos hizo sentir los mejores del mundo.
+          </p>
+          <p class="muted">
+            La noticia que desvastaria los corazones de un pais, la mano que que puso un manto de piedad.
+          </p>
+        </div>
+        <figure>
+          <!-- Reemplazá el src por la ruta real de tu imagen en la carpeta -->
+          <img src="imagenes/LaManoDeDios.png" alt="La Mano de Dios" />
+          <figcaption class="muted">La mano de dios</figcaption>
+          <img src="imagenes/Maradona.png" alt="La Mano de Dios" />
+          <figcaption class="muted">La mano de dios</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="card">
+      <h2>2022 — El penal que nos reunió otra vez en una algarabía desbordante.</h2>
+      <div class="grid">
+        <div>
+          <section class="card">
+            <h2>2022 — El penal que nos unió</h2>
+            <p>
+              Cuando te comprometés con una causa que te hace sentir especial por lo que das, no es plata:
+              es un beso o un abrazo. Es tener gloria sin haberla ganado, pero que nos representa cuando alguien
+              va a patear el último penal.
+            </p>
+            <p>
+              Con sutileza, calma y seguridad, ese instante te hace levantar la copa del mundo.
+              Ese alguien tiene nombre: <strong>Gonzalo Montiel</strong>, quien anotó el cuarto penal argentino,
+              el decisivo, el <em>18 de diciembre de 2022</em> en el Estadio Lusail, Qatar.
+            </p>
+            <p>
+              Fue el momento en que la camiseta dejó de ser tela y se volvió piel.
+            </p>
+          </section>
+          <p class="muted">
+            El temple de Montiel a la hora de ejecutar, jerarquia sin igual para una definicion inmaculada.
+          </p>
+        </div>
+        <figure>
+          <!-- Reemplazá el src por la ruta real de tu imagen en la carpeta -->
+          <img src="imagenes/LaMejor1.png" alt="Penal definitorio" />
+          <img src="imagenes/Argentinacampeón.png" alt="Penal definitorio" />
+          <figcaption class="muted">La gente se volvio a juntar en las calles donde se hizo notar, que hay cosas que no
+            nos pueden quitar, la union del pueblo que jamas sera vencida.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Lenguaje y crítica para el bien común</h2>
+      <p>
+        Esa camiseta no es como la que te ponen todos los días para manipularte.
+        Realmente debemos encontrar la esperanza, la alegría y el sentido de vivir. Los argentinos debemos tener la
+        misma conducta y la misma imagen, sin depender de lo externo,
+        sin esperar que nos den lo que ya tenemos.
+        El sentido común para no alinearse, y lo que obtuvimos por unos momentos, nos lo vuelven a quitar, el ser
+        nosotros mismos. ¿Qué podemos hacer ante los noticieros que abren
+        sus ediciones con el morbo de presentar como primera noticia una tragedia? Lo que nos transmiten todos los días
+        es dolor, inseguridad y miedo. ¿Qué esperanza hay para
+        aquellas personas susceptibles, si todos los días es más de lo mismo?
+      </p>
+      <p>
+        El dilema de hoy, que seguro será el de mañana también, es que todos condenaron la plata mal habida dentro del
+        poder, y que hoy todos quieren apoderarse de algo que, según ellos, había sido ilícito, pero ahora tratan de
+        convertir ese botín en lícito, y no en favor del pueblo.
+        ¿Qué necesidad tiene un presidente de emitir un DNU para hacerse de esa plata? Impone, pero no justifica el
+        porqué ni el para qué. Y salieron los jueces, que parecen salidos de la rectitud, para impedir y lograr que se
+        llevara a cabo ese dictamen.
+        El no dar a lugar un DNU. ¿Será que la plata ya no se encuentra y ahora tienen que sostener, por intermedio de
+        la Constitución, lo que parece haber estado perdida? ¿O casualidad, la volvieron a encontrar?
+      </p>
+      <p>
+        Yo creo que a la gente del gobierno es más fácil sacarle un órgano que plata. Así estamos hoy: ya ni la plata
+        incautada quieren dejar, si es que está, porque no adjuntan el cumplimiento de un beneficio para el pueblo,
+        quien creo que tiene más derecho que cualquier otro.
+        Ah, no es cierto que nuestra función como pueblo es dar lo que nos quitan de nuestros propios sustentos
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Ernesto Ireneo Lora · Todos los derechos reservados
+  </footer>
+
+</body>
+
+</html>
