@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pensamiento Abierto:Art 5</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header role="banner" aria-label="Encabezado principal del artículo">
+    <h1>Los matices de las distintas épocas</h1>
+    <p class="articulo" aria-label="Número de artículo">Artículo 5</p>
+  </header>
+
+  <main>
+  <article>
+    <h1>Buenos Aires II nos cuenta Bajo Belgrano</h1>
+    <h2>Elisa Casella de Calderón</h2>
+    <h3>Autora del "Bajo Belgrano"</h3>
+    <p>
+      Lo que iluminaba la presentación de la revista era un globo aerostático que decía “Pampero”.
+      Dicho sea de paso, el dueño de Flecha prefiere producir en la Argentina.
+    </p>
+    <p>
+      El inicio del Bajo se dio en <strong>1855</strong> y en <strong>1865</strong> fue la cabecera del partido de
+      Belgrano, que estaba conformado por cuarteles que eran bañados. En sus relatos iniciales,
+      Elisa Casella describía un Bajo Belgrano marcado por las primeras transformaciones:
+      comenzó con industrias primarias, la población aumentó, la apertura del <em>Hipódromo Argentino</em>
+      hizo proliferar al barrio, se construyó la parroquia <em>Nuestra Señora de las Mercedes</em>,
+      se crearon escuelas y se adoquinaron las calles. El barrio tomó identidad.
+    </p>
+    <p>
+      Lo que se puede escribir sobre este tema es vasto, por lo que considero que lo que apunto aquí
+      es una descripción inicial, para luego abordar las transformaciones que sufren los barrios bajo
+      la misma leyenda: <em>siempre más dinero, más poder</em>.
+    </p>
+    <p>
+      El vals <strong>“Caserón de tejas”</strong> fue compuesto en <strong>1941</strong>, con música de
+      <strong>Sebastián Piana</strong> y letra de <strong>Cátulo Castillo</strong>. Es un homenaje al barrio
+      de Belgrano y a la memoria de la vida familiar en esas casas antiguas de tejas.
+    </p>
+    <blockquote>
+      “¡Barrio de Belgrano! ¡Caserón de tejas!<br>
+      ¿Te acordás, hermana, de las tibias noches sobre la vereda?<br>
+      Cuando un tren cercano nos dejaba viejas, raras añoranzas<br>
+      bajo la templanza suave del rosal…”
+    </blockquote>
+    <p>
+      Cantor destacado: <strong>Roberto Goyeneche</strong>, quien le dio una interpretación muy recordada.
+    </p>
+  </article>
+
+  <article>
+    <p>
+      Así, el Bajo Belgrano pasó de ser un barrio donde los niños jugaban en las
+      calles casi sin autos, a convertirse en parte del centro moderno, con largas
+      esperas en el tránsito y escasez de lugares para estacionar. La memoria de
+      aquellas tardes de <em>“Caserón de tejas”</em> contrasta con la realidad actual,
+      marcada por la presión inmobiliaria y la pérdida de la vida barrial.
+    </p>
+    <p>
+      Ni que hablar de los jefes de Gobierno que creen que edifican,
+      cuando en realidad lo que hacen es generar más excremento y basura.
+    </p>
+  </article>
+  <article>
+    <h3>¿Es bueno evolucionar?</h3>
+    <p>
+      Pensar que el pueblo argentino estaba constituido, según los informes de la época,
+      de tal manera que se podría estimar que cada persona podía tener su propio caballo.
+      Se decía que la población de caballos, en los tiempos de los bañados, era incluso
+      mayor que la cantidad de habitantes del país.
+    </p>
+    <p>
+      Esa imagen nos lleva a reflexionar sobre cómo se organizaba la sociedad y cómo los líderes
+      fueron moldeando, a su voluntad, el destino de la gente.
+    </p>
+    <p>
+      Sigue la historia en el próximo artículo y verás lo que ocasionan quienes lideran al pueblo
+      y lo denigran a su propia conveniencia.
+    </p>
+  </article>
+
+
+    <blockquote aria-label="Cita destacada">
+      <h3>Estos articulos es un mero introito a lo que van a deasarrollar los actores</h3>
+      <p>"Tendria que ser una telenovela, no la realidad de un pais"</p>
+      <cite class="firma">— Ernesto I. Lora</cite>
+    </blockquote>
+    
+  </main>
+  <!-- Incluir formulario -->
+  <div id="bloque-formulario"></div>
+
+  <!-- Comentarios publicados -->
+  <section id="comentarios-publicados" class="comentarios-publicados">
+    <h2>Comentarios publicados</h2>
+    <ul id="lista-publicados"></ul>
+  </section>
+
+  <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+    <ul>
+      <li>
+        <a href="articulo4.html" aria-label="Ir al inicio">⟵ Artículo anterior</a>
+      </li>
+      <li>
+        <a href="articulo6.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Footer -->
+  <div id="bloque-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../js/comentarios.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    // Cargar el formulario y el footer como componentes
+    fetch("../componentes/formulario-comentario.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-formulario").innerHTML = html;
+      });
+
+    fetch("../componentes/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-footer").innerHTML = html;
+      });
+  </script>
+</body>
+
+</html>

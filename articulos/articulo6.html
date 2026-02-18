@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pensamiento Abierto:Art 6</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header role="banner" aria-label="Encabezado principal del artículo">
+        <h1>Los matices de las distintas épocas</h1>
+        <p class="articulo" aria-label="Número de artículo">Artículo 6</p>
+    </header>
+
+    <main>
+    
+        <article>
+            <h2>Te resulta conocido</h2>
+            <h3>Intervención del PAMI (2000)</h3>
+            <p>
+                Larreta fue interventor del PAMI en el año 2000, durante la presidencia de Fernando De la Rúa.
+                Allí se lo vinculó con la gestión financiera del organismo, en un contexto de crisis y deudas.
+                El afamado Rodríguez Larreta, junto con María Eugenia Vidal, estuvo relacionado con la deuda millonaria
+                que el organismo mantenía con el distinguido doctor René Favaloro, deuda que nunca fue saldada y que
+                lo llevó a tomar una decisión trágica. A pesar de ello, el objetivo de la intervención —recaudar millones—
+                se cumplió en menos de un año, lo cual superó las expectativas del propio presidente, considerado por muchos
+                como una persona de bien.
+            </p>
+            <p>
+                Luego le tocó el turno de asumir la Dirección General Impositiva (2001–2002),
+                también bajo De la Rúa y los presidentes interinos posteriores.
+            </p>
+            <p>
+                La crisis de 2001 culminó con la caída de De la Rúa. En este caso, se refiere a la salida
+                abrupta del presidente del poder, sin transición ordenada, en medio de un colapso institucional.
+                La renuncia de De la Rúa fue consecuencia de la crisis económica y social de diciembre de 2001.
+                La represión dejó más de 30 muertos en todo el país. La imagen del helicóptero se convirtió en símbolo
+                de esa salida precipitada y caótica, que marcó el final de su gobierno.
+            </p>
+        </article>
+    
+        <article>
+            <h3>Gobierno de la Ciudad de Buenos Aires</h3>
+            <p>
+                Larreta fue jefe de Gabinete de Mauricio Macri en la Ciudad (2007–2015).
+                Cuando Macri asumió la presidencia de la Nación, Larreta lo sucedió como jefe de Gobierno
+                porteño desde diciembre de 2015 hasta diciembre de 2023.
+                Es decir: Larreta no fue jefe de Gobierno durante la presidencia de De la Rúa.
+                En esa época estaba en cargos nacionales (PAMI y DGI). Su desembarco en la Ciudad se dio recién
+                con Macri, primero como jefe de Gabinete y luego como jefe de Gobierno.
+            </p>
+            <p>
+                A pocos metros del Bajo Belgrano, era un tiempo en que los habitantes reclamaban
+                que no se edificara indiscriminadamente, defendiendo la vida comunitaria y los espacios abiertos.
+                El poder político y económico volvió a poner al Bajo Belgrano en el centro de disputas.
+                La promesa de trasladar el Tiro Federal para crear “espacios verdes” contrastaba con obras
+                de infraestructura pluvial y cloacal de gran magnitud, que anticipaban un futuro de edificios
+                y desarrollos inmobiliarios. La conducción de la Ciudad de Buenos Aires, con figuras
+                vinculadas a la política y a los sindicatos, fue señalada como artífice de estas transformaciones.
+            </p>
+            <p>
+                Cronología:
+                - Macri en la Ciudad (2007) → convoca a Larreta y Vidal (viejos conocidos).
+                - Larreta jefe de Gobierno (2015–2023) → traslado del Tiro Federal y desarrollos inmobiliarios.
+                - Jorge Macri (2023–actualidad) → continuidad de la política de edificios en barrios como Bajo Belgrano.
+            </p>
+        </article> 
+        
+    </main>
+
+    <!-- Incluir formulario -->
+    <div id="bloque-formulario"></div>
+
+    <!-- Comentarios publicados -->
+    <section id="comentarios-publicados" class="comentarios-publicados">
+        <h2>Comentarios publicados</h2>
+        <ul id="lista-publicados"></ul>
+    </section>
+
+    <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+        <ul>
+            <li>
+                <a href="articulo5.html" aria-label="Ir al inicio">⟵ Artículo anterior</a>
+            </li>
+            <li>
+                <a href="articulo7.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <div id="bloque-footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/comentarios.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        // Cargar el formulario y el footer como componentes
+        fetch("../componentes/formulario-comentario.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("bloque-formulario").innerHTML = html;
+            });
+
+        fetch("../componentes/footer.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("bloque-footer").innerHTML = html;
+            });
+    </script>
+</body>
+
+</html>

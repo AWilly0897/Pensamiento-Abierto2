@@ -18,51 +18,52 @@
         <p class="articulo" aria-label="Número de artículo">Artículo 4</p>
     </header>
 
-    <main>
-        <a href="Milagro/index.html">Ver carpeta Milagro</a>
-    </main>
+   <main>
+  👉 <a href="Milagro/index.html" 
+         style="font-size: 1.2em; color: red; text-decoration: underline; text-decoration-color: #003366; text-decoration-thickness: 3px;">
+    <em>Ingrese para ver el artículo 4 en la carpeta Milagro</em>
+  </a>
 
 
-    <!-- Incluir formulario -->
-    <div id="bloque-formulario"></div>
+   <!-- Incluir formulario -->
+  <div id="bloque-formulario"></div>
 
     <!-- Comentarios publicados -->
-    <section id="comentarios-publicados" class="comentarios-publicados">
-        <h2>Comentarios publicados</h2>
-        <ul id="lista-publicados"></ul>
-    </section>
+  <section id="comentarios-publicados" class="comentarios-publicados">
+    <h2>Comentarios publicados</h2>
+    <ul id="lista-publicados"></ul>
+  </section>
 
-    <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
-        <ul>
-            <li>
-                <a href="articulo3.html" aria-label="Ir al inicio">⟵ Artículo anterior</a>
-            </li>
-            <li>
-                <a href="articulo5.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+    <ul>
+      <li>
+        <a href="articulo3.html" aria-label="Ir al inicio">⟵ Artículo anterior</a>
+      </li>
+      <li>
+        <a href="articulo5.html" aria-label="Ir al artículo siguiente:">Artículo siguiente ⟶</a>
+      </li>
+    </ul>
+  </nav>
+  </main>
+  
+  <!-- Scripts -->
+  <script src="../js/comentarios.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    // Cargar el formulario y el footer como componentes
+    fetch("../componentes/formulario-comentario.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-formulario").innerHTML = html;
+      });
 
-    <!-- Footer -->
-    <div id="bloque-footer"></div>
-
-    <!-- Scripts -->
-    <script src="../js/comentarios.js"></script>
-    <script src="../script.js"></script>
-    <script>
-        // Cargar el formulario y el footer como componentes
-        fetch("../componentes/formulario-comentario.html")
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById("bloque-formulario").innerHTML = html;
-            });
-
-        fetch("../componentes/footer.html")
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById("bloque-footer").innerHTML = html;
-            });
-    </script>
+    fetch("../componentes/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-footer").innerHTML = html;
+      });
+  </script>
 </body>
 
 </html>
+
